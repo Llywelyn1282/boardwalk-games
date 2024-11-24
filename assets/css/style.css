@@ -5,10 +5,14 @@
 :root {
     --primary-font: "Inter", sand-serif;
     --secondary-font: "Macondo", cursive;
-    --primary-color: #3a2620; /* dark brown */
-    --secondary-color: #aa9581; /* light brown */
-    --highlight-color: #416a8e; /* blue */
-    --light-highlight-color: #7a9fc2; /* light blue */
+    --primary-color: #3a2620;
+    /* dark brown */
+    --secondary-color: #aa9581;
+    /* light brown */
+    --highlight-color: #416a8e;
+    /* blue */
+    --light-highlight-color: #7a9fc2;
+    /* light blue */
 }
 
 /* Global Styles */
@@ -71,23 +75,55 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
-/* grid visualisation CSS for testing */
+/* Game Library Cards */
 
-/* .container,
-.row {
-    border: 2px solid black;
+#new-games .card,
+#fav-games .card {
+    border: none;
 }
 
-.col-12 {
-    border: 2px solid white;
-    background-color: lightgray;
-} */
+/* Footer / Contact */
+
+#contact {
+    background-color: var(--primary-color);
+    color: white;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+}
+
+#contact h2 {
+    color: white;
+}
+
+#contact .sub-heading-color {
+    color: var(--light-highlight-color);
+}
+
+#contact i {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    margin-right: 15px;
+}
+
+#contact .social-links i {
+    color: var(--light-highlight-color);
+    font-size: 1.9rem;
+    transition: color 0.3s ease-in-out;
+}
+
+#contact .social-links i:hover {
+    color: var(--secondary-color);
+}
+
+#contact .table-dark * {
+    background-color: transparent;
+}
 
 /* Media Queries */
 
 /* Medium Devices (Tablets, 768px and up) */
 @media screen and (min-width: 768px) {
-    
+
     /* Make cards the same height */
     #services .card-body {
         min-height: 191px;
@@ -96,7 +132,7 @@ h2 {
 
 /* Large Devices (Laptops, 992px and up) */
 @media screen and (min-width: 992px) {
-    
+
     /* Make cards the same height */
     #services .card-body {
         min-height: auto;
@@ -105,7 +141,7 @@ h2 {
 
 /* XL Devices (Laptops, 1200px and up) */
 @media screen and (min-width: 1200px) {
-    
+
     /* Make cards the same height */
     #services .card-body {
         min-height: 220px;
@@ -114,7 +150,7 @@ h2 {
 
 /* XXL Devices (Laptops, 1400px and up) */
 @media screen and (min-width: 1400px) {
-    
+
     /* Make cards the same height */
     #services .card-body {
         min-height: 195px;
